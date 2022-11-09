@@ -1,0 +1,13 @@
+footer {
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-2;
+  color: $color-3;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    padding-top: 30px;
+  }
+}

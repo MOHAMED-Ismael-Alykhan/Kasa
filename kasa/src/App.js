@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Lodging from './pages/Lodging';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Error from './pages/Error';
 import './style/index.scss';
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/logement/:id" element={<Lodging />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </>
   );
 }
