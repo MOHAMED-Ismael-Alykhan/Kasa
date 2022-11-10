@@ -9,10 +9,14 @@ body {
   outline: none;
 }
 
-header {
+header,
+main {
   padding: 0 8%;
 }
 
+main {
+  min-height: 76vh;
+}
 header {
   padding-top: 40px;
 }
