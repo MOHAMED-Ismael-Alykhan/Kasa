@@ -1,0 +1,33 @@
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #ff6060;
+  border-radius: 5px;
+  border-style: none;
+  height: 47px;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 0px 30px 0px 15px;
+  cursor: pointer;
+  @media screen and (max-width: 420px) {
+    font-size: 14px;
+    padding-right: 15px;
+    height: 30px;
+  }
+}
+
+.dropdown-text {
+  font-size: 18px;
+  line-height: 142.6%;
+  color: #ff6060;
+  padding: 30px 15px;
+  background: #f6f6f6;
+  border-radius: 5px;
+  margin: 0;
+  pointer-events: none;
+  @media screen and (max-width: 420px) {
+    font-size: 14px;
+  }
+}

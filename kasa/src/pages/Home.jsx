@@ -4,37 +4,20 @@ import Card from '../components/Card';
 import { Link } from 'react-router-dom';
 import data from '../lodging.json';
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <HomeBanner />
       <div className="cards-container">
-        {data.map((appart, id) => (
+        {data.map((lodging, id) => (
           <div className="card-lodging" key={id}>
-            <Link className="link-card-lodging" to={`/lodging/${appart.id}`}>
-              <Card cover={appart.cover} title={appart.title} />
+            <Link to={`/lodging/${lodging.id}`}>
+              <Card cover={lodging.cover} title={lodging.title} />
             </Link>
           </div>
         ))}
       </div>
     </div>
   );
-}
-/*
-export default function Home() {
-  return (
-    <div>
-      <HomeBanner />
-      <div className="cards-container">
-        {data.map((appart, id) => (
-          <div key={id}>
-            <Link to={`/lodging/${appart.id}`}>
-              <Card cover={appart.cover} title={appart.title} />
-            </Link>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-*/
+};
+export default Home;
