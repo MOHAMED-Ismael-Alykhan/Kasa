@@ -1,0 +1,20 @@
+.aboutBannerImg {
+  display: flex;
+  width: auto;
+  height: 223px;
+  margin: 0 6.5%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.3) url(../../images/mountains.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  @media screen and (max-width: 420px) {
+    background: rgba(0, 0, 0, 0.3) url(../../images/mountainsMobile.png);
+    width: 335px;
+    margin: auto;
+    border-radius: 10px;
+  }
+}
