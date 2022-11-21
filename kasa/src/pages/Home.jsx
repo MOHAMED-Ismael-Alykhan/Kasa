@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from '../components/Banner';
+import HomeBanner from '../components/HomeBanner';
 import Card from '../components/Card';
 import { Link } from 'react-router-dom';
 import data from '../lodging.json';
@@ -7,11 +7,11 @@ import data from '../lodging.json';
 export default function Home() {
   return (
     <div>
-      <Banner />
+      <HomeBanner />
       <div className="cards-container">
         {data.map((appart, id) => (
-          <div className="card_logement" key={id}>
-            <Link className="link_card_logement" to={`/logement/${appart.id}`}>
+          <div className="card-lodging" key={id}>
+            <Link className="link-card-lodging" to={`/lodging/${appart.id}`}>
               <Card cover={appart.cover} title={appart.title} />
             </Link>
           </div>
@@ -20,3 +20,21 @@ export default function Home() {
     </div>
   );
 }
+/*
+export default function Home() {
+  return (
+    <div>
+      <HomeBanner />
+      <div className="cards-container">
+        {data.map((appart, id) => (
+          <div key={id}>
+            <Link to={`/lodging/${appart.id}`}>
+              <Card cover={appart.cover} title={appart.title} />
+            </Link>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+*/

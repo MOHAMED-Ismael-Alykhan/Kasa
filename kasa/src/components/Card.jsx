@@ -1,13 +1,14 @@
 import React from 'react';
 import '../style/components/Card.scss';
 
-export default function Card({ cover, title }) {
+const Card = ({ cover, title }) => {
   return (
-    <article className="card-logement">
+    <section className="card-lodging">
       <img src={cover} alt="location" />
-      <div className="card-logement__layer">
-        <p className="card-logement__title">{title}</p>
+      <div className="card-lodging__degrade">
+        <p className="card-lodging__title">{title}</p>
       </div>
-    </article>
+    </section>
   );
-}
+};
+export default Card;

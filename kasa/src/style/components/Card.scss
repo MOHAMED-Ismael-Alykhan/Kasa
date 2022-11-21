@@ -1,4 +1,4 @@
-.card-logement {
+.card-lodging {
   display: flex;
   width: 340px;
   height: 340px;
@@ -15,23 +15,22 @@
   }
   @media screen and (max-width: 280px) {
     height: 200px;
-    margin-left: 55px;
+    margin: 0 8.5%;
   }
   & img {
     display: flex;
     width: 100%;
-    border-radius: 10px;
     object-fit: cover;
+    border-radius: 10px;
   }
 
-  &__layer {
+  &__degrade {
     display: flex;
     width: 100%;
     height: 100%;
     align-items: center;
     position: absolute;
     border-radius: 10px;
-    bottom: 0;
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 0%,
@@ -44,13 +43,12 @@
     align-items: flex-end;
     position: absolute;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
-    color: #f1f1f1;
     line-height: 142.6%;
     left: 5.88%;
     right: 5.88%;
     top: 78.82%;
     bottom: 5.88%;
+    color: #f1f1f1;
   }
 }
