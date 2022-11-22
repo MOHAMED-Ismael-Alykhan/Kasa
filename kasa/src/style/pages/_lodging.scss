@@ -1,0 +1,23 @@
+.title-container {
+  color: #ff6060;
+
+  h1 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 0;
+    @media screen and (max-width: 585px) {
+      font-size: 20px;
+    }
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 585px) {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+}
