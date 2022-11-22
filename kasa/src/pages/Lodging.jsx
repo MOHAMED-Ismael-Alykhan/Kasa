@@ -14,23 +14,30 @@ const Lodging = () => {
   return (
     <main className="lodging-container">
       <Carrousel slides={slidePictures} />
-      <div className="title-container">
-        <h1>{getLodging.title}</h1>
-        <h2>{getLodging.location}</h2>
-      </div>
-      <div className="tags-container">
-        {getLodging.tags.map((tag) => (
-          <Tag key={tag} tag={tag} />
-        ))}
-      </div>
-      <div className="host-container">
-        <Host
-          hostName={getLodging.host.name}
-          hostPicture={getLodging.host.picture}
-        />
-      </div>
-      <div className="rating-container">
-        <Rating rating={getLodging.rating} />
+      <div className="titleTags-hostRating">
+        <div className="title-tags-container">
+          <div className="title-container">
+            <h1>{getLodging.title}</h1>
+            <h2>{getLodging.location}</h2>
+          </div>
+
+          <div className="tags-container">
+            {getLodging.tags.map((tag) => (
+              <Tag key={tag} tag={tag} />
+            ))}
+          </div>
+        </div>
+        <div className="host-rating-container">
+          <div className="host-container">
+            <Host
+              hostName={getLodging.host.name}
+              hostPicture={getLodging.host.picture}
+            />
+          </div>
+          <div className="rating-container">
+            <Rating rating={getLodging.rating} />
+          </div>
+        </div>
       </div>
     </main>
   );
