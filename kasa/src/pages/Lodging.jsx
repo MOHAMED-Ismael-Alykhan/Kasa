@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Carrousel from '../components/Carrousel';
 import Tag from '../components/Tag';
 import Host from '../components/Host';
+import Rating from '../components/Rating';
 import data from '../lodging.json';
 
 const Lodging = () => {
@@ -27,6 +28,9 @@ const Lodging = () => {
           hostName={getLodging.host.name}
           hostPicture={getLodging.host.picture}
         />
+      </div>
+      <div className="rating-container">
+        <Rating rating={getLodging.rating} />
       </div>
     </main>
   );
