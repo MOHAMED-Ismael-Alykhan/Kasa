@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Carrousel from '../components/Carrousel';
 import Tag from '../components/Tag';
+import Host from '../components/Host';
 import data from '../lodging.json';
 
 const Lodging = () => {
@@ -20,6 +21,12 @@ const Lodging = () => {
         {getLodging.tags.map((tag) => (
           <Tag key={tag} tag={tag} />
         ))}
+      </div>
+      <div className="host-container">
+        <Host
+          hostName={getLodging.host.name}
+          hostPicture={getLodging.host.picture}
+        />
       </div>
     </main>
   );
