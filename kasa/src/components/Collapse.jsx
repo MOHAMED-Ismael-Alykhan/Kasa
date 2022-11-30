@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ArrowUp from '../images/vectorUp.png';
 import ArrowDown from '../images/vectorDown.png';
 
-export default function DropDown({ txt, title }) {
+const Collapse = ({ txt, title }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return isOpen ? (
@@ -29,4 +29,5 @@ export default function DropDown({ txt, title }) {
       </button>
     </div>
   );
-}
+};
+export default Collapse;

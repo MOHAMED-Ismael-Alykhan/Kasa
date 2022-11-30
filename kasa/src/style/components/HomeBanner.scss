@@ -25,6 +25,7 @@
   color: #ffffff;
   border-radius: 25px;
   background: rgba(0, 0, 0, 0.3);
+  padding: 0px 20px;
 }
 
 @media screen and (max-width: 786px) {
@@ -45,7 +46,6 @@
     font-weight: 500;
     line-height: 143%;
     color: #ffffff;
-
     background: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 
@@ -54,6 +54,7 @@
       line-height: 24px;
       justify-content: flex-start;
       padding-left: 20px;
+      padding-right: 130px;
     }
   }
 }

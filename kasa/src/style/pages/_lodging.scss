@@ -56,4 +56,30 @@
     padding: 0 20px;
     min-width: 335px;
   }
+  &__texts {
+    padding-bottom: 20px;
+  }
+}
+
+.collapse-container {
+  display: flex;
+  gap: 6%;
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.collapse-description {
+  width: 50%;
+  @media screen and (max-width: 420px) {
+    width: 100%;
+  }
+}
+.collapse-equipments {
+  width: 50%;
+  list-style: none;
+  @media screen and (max-width: 420px) {
+    width: 100%;
+  }
 }
