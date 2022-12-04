@@ -18,7 +18,7 @@ Démarrer le projet React et développer l’ensemble de l’application, les co
 
 #### Pour lancer l'application'
 
-- Ouvrir un terminal et aller de la dossier kasa avec `cd kasa`.
+- Ouvrir un terminal et aller dans dossier kasa avec `cd kasa`.
 
 * Exécuter `npm install` pour installer les dépendances.
 * Taper `npm start` pour avoir accès au serveur.
